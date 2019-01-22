@@ -1,0 +1,4 @@
+baseURL = "https://hellowordcount.github.io/"
+languageCode = "en-us"
+title = "Peng Blog"
+theme = "hugo-theme-cleanwhite"
