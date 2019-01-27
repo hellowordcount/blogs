@@ -1,4 +1,102 @@
 baseURL = "https://hellowordcount.github.io/"
-languageCode = "en-us"
+languageCode = "zh-cn"
 title = "Peng Blog"
 theme = "hugo-theme-cleanwhite"
+
+[outputs]
+home = ["HTML", "RSS", "Algolia"]
+
+[params]
+  header_image = "img/home-bg-jeep.jpg"
+  SEOTitle = "徐鹏的博客 | Peng Blog"
+  description = "徐鹏，程序员, ABC实践者 ，游戏爱好者 | 这里是 徐鹏 的博客，与你一起发现更大的世界。"
+  keyword = "徐鹏, Xupeng, XuPeng, , 徐鹏的网络日志, 徐鹏的博客, XuPeng Blog, 博客, 个人网站, 互联网, Web, 大数据，BigData"
+  slogan = "路在脚下，心向远方"
+
+  image_404 = "img/404-bg.jpg"
+  title_404 = "你来到了没有知识的荒原 :("
+
+
+  # todo
+  # leancloud storage for page view counter
+  # page_view_conter = true
+  # leancloud_app_id = "Xu5MAnXL360Ms89vMVnWBjuq-gzGzoHsz"
+  # leancloud_app_key = "efUYEefAc2eIPBRO59PRERQC"
+
+
+  # todo
+  # algolia site search
+  algolia_search = true
+  algolia_appId = "547AIK6U8M"
+  algolia_indexName = "personal_site"
+  algolia_apiKey = "0d18c21885287384aea4a5dcd100c528"
+
+  # Sidebar settings
+  sidebar_about_description = "Software Developer, Game Enthusiast and Life Adventurer"
+  sidebar_avatar = "img/xupeng.png"      # use absolute URL, seeing it's used in both `/` and `/about/`
+
+  featured_tags = true
+  featured_condition_size = 2
+
+  # todo
+  # Baidu Analytics
+  # ba_track_id = "a1d96090e4189c0376251fb043da7be5"
+
+
+  # todo 讨论
+  # We need a proxy to access Disqus api in China
+  #disqus_proxy = "https://disqusapi.zhaohuabing.com"
+  #disqus_site = "https://zhaohuabing.com"
+
+  #Enable wechat pay & alipay to allow readers send reward money if they like the articles
+  reward = true
+  # reward_guide = "如果这篇文章对你有用,请随意打赏"
+
+  friends = true
+  bookmarks = true
+  about_me = true
+
+  [[params.friend_link]]
+  title = "AloneAli的博客"
+  href =  "https://www.cnblogs.com/AloneAli/"
+
+[params.social]
+  rss            = true
+  email          = "1197071495@qq.com"
+  #facebook      = "full profile url in facebook"
+  #googleplus    = "full profile url in googleplus"
+  #twitter       = "full profile url in twitter"
+  #linkedin       = "https://www.linkedin.com/in/zhaohuabing"
+  #stackoverflow  = "https://stackoverflow.com/users/2306565/huabing-zhao"
+  #instagram     = "full profile url in instagram"
+  github         = "https://github.com/hellowordcount"
+  wechat         = "img/Wechat_xp_qrcode.jpeg"
+  #medium         = "https://medium.com/@zhaohuabing"
+  #pinterest     = "full profile url in pinterest"
+
+
+[[params.bookmark_link]]
+  title =  "Hadoop"
+  href =  "https://hadoop.apache.org/"
+[[params.bookmark_link]]
+  title =  "ServiceMesher"
+  href =  "hhttp://www.servicemesher.com"
+
+
+[[params.addtional_menus]]
+  title =  "BOOKS"
+  href =  "/top/books/"
+[[params.addtional_menus]]
+  title =  "ABOUT"
+  href =  "/top/about/"
+
+
+[outputFormats.Algolia]
+baseName = "algolia"
+isPlainText = true
+mediaType = "application/json"
+notAlternative = true
+
+[params.algolia]
+vars = ["title", "summary", "date", "publishdate", "expirydate", "permalink"]
+params = ["categories", "tags"]

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
+echo -e "\033[0;32mSubmit updates to GitHub...\033[0m"
 
 
 # Add changes to git.
