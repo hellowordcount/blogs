@@ -19,12 +19,12 @@ home = ["HTML", "RSS", "Algolia"]
 
   # todo
   # leancloud storage for page view counter
-  # page_view_conter = true
-  # leancloud_app_id = "Xu5MAnXL360Ms89vMVnWBjuq-gzGzoHsz"
-  # leancloud_app_key = "efUYEefAc2eIPBRO59PRERQC"
+  page_view_conter = false
+  leancloud_app_id = ""
+  leancloud_app_key = ""
 
 
-  # todo
+
   # algolia site search
   algolia_search = true
   algolia_appId = "547AIK6U8M"
@@ -40,13 +40,13 @@ home = ["HTML", "RSS", "Algolia"]
 
   # todo
   # Baidu Analytics
-  # ba_track_id = "a1d96090e4189c0376251fb043da7be5"
+  ba_track_id = ""
 
 
   # todo 讨论
   # We need a proxy to access Disqus api in China
-  #disqus_proxy = "https://disqusapi.zhaohuabing.com"
-  #disqus_site = "https://zhaohuabing.com"
+  disqus_proxy = ""
+  disqus_site = ""
 
   #Enable wechat pay & alipay to allow readers send reward money if they like the articles
   reward = true
@@ -75,27 +75,27 @@ home = ["HTML", "RSS", "Algolia"]
   #pinterest     = "full profile url in pinterest"
 
 
-[[params.bookmark_link]]
-  title =  "Hadoop"
-  href =  "https://hadoop.apache.org/"
-[[params.bookmark_link]]
-  title =  "ServiceMesher"
-  href =  "hhttp://www.servicemesher.com"
+  [[params.bookmark_link]]
+    title =  "Hadoop"
+    href =  "https://hadoop.apache.org/"
+  [[params.bookmark_link]]
+    title =  "ServiceMesher"
+    href =  "hhttp://www.servicemesher.com"
 
 
-[[params.addtional_menus]]
-  title =  "BOOKS"
-  href =  "/top/books/"
-[[params.addtional_menus]]
-  title =  "ABOUT"
-  href =  "/top/about/"
+  [[params.addtional_menus]]
+    title =  "BOOKS"
+    href =  "/top/books/"
+  [[params.addtional_menus]]
+    title =  "ABOUT"
+    href =  "/top/about/"
 
 
-[outputFormats.Algolia]
-baseName = "algolia"
-isPlainText = true
-mediaType = "application/json"
-notAlternative = true
+  [outputFormats.Algolia]
+    baseName = "algolia"
+    isPlainText = true
+    mediaType = "application/json"
+    notAlternative = true
 
 [params.algolia]
 vars = ["title", "summary", "date", "publishdate", "expirydate", "permalink"]
